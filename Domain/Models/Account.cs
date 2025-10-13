@@ -5,17 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
 
-namespace Domain.Entities
+namespace Domain.Models
 {
     public class Account
     {
-        public long Id { get; set; }
+        public int Id { get; set; }
         public int CustomerId { get; set; }
         public decimal Balance { get; set; }
         public DateTime Created_at { get; set; }
         public DateTime Updated_at { get; set; }
 
-        //public Customer Customers { get; set; }
-        //public ICollection<Transactions> Transactions { get; set; } = new List<Transactions>();
+        public Customer Customers { get; set; }
+        public ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
     }
 }

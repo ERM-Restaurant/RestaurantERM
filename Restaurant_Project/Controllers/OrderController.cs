@@ -1,6 +1,11 @@
-﻿namespace Restaurant_Project.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Restaurant_Project.Controllers
 {
-    public class OrderController
+    [ApiController]
+    [Route("api/[controller]")]
+    public class OrderController : ControllerBase
     {
+
     }
 }
